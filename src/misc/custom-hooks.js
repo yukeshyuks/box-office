@@ -35,6 +35,7 @@ export function useShows(key = 'shows') {
 }
 
 export function useLastQuery(key = 'lastQuery') {
+  // eslint-disable-next-line
   const [input, setInput] = useState(() => {
     const persisted = sessionStorage.getItem(key);
 
